@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Paraguay register — warm */
+  --color-burnt-amber: #c17b2f;
+  --color-gold-ochre: #d4922b;
+  --color-warm-gold: #e8b86d;
+  --color-pale-dust: #e8d5c0;
+  --color-terracotta: #a0522d;
+
+  /* Abu Dhabi register — cool */
+  --color-deep-navy: #1b2a3b;
+  --color-cobalt: #3d5fad;
+  --color-mid-blue: #6b8fc4;
+  --color-silver-haze: #8b9eae;
+  --color-pale-haze: #b8c4cc;
+
+  /* Connective */
+  --color-deep-sage: #2d4a3e;
+  --color-dark-shadow: #4a3728;
+  --color-off-white: #f5f0eb;
+  --color-charcoal: #2c2c2c;
+
+  --background: var(--color-off-white);
+  --foreground: var(--color-charcoal);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-burnt-amber: var(--color-burnt-amber);
+  --color-gold-ochre: var(--color-gold-ochre);
+  --color-warm-gold: var(--color-warm-gold);
+  --color-pale-dust: var(--color-pale-dust);
+  --color-terracotta: var(--color-terracotta);
+  --color-deep-navy: var(--color-deep-navy);
+  --color-cobalt: var(--color-cobalt);
+  --color-mid-blue: var(--color-mid-blue);
+  --color-silver-haze: var(--color-silver-haze);
+  --color-pale-haze: var(--color-pale-haze);
+  --color-deep-sage: var(--color-deep-sage);
+  --color-dark-shadow: var(--color-dark-shadow);
+  --color-off-white: var(--color-off-white);
+  --color-charcoal: var(--color-charcoal);
+
+  --font-display: var(--font-space-grotesk);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-cobalt);
+  color: var(--color-off-white);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

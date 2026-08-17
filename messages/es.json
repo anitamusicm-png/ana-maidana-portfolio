@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "work": "Trabajo",
+    "ep": "Entre dos orillas",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "role": "Productora Creativa — Ingeniera de Grabación y Mezcla — Diseñadora de Sonido — Guitarrista",
+    "location": "Abu Dhabi, EAU — de Paraguay"
+  },
+  "artistStatement": {
+    "line1": "Explorando la diáspora, la identidad cultural y la traducción musical a través del sonido.",
+    "line2": "Cuerdas de guitarra y faders de consola, afinados a la misma distancia entre dos orillas."
+  },
+  "work": {
+    "eyebrow": "Trabajo Seleccionado",
+    "viewProject": "Ver proyecto",
+    "categories": {
+      "production": "Producción",
+      "mixing": "Mezcla",
+      "sound-design": "Diseño de Sonido",
+      "post-production": "Post-Producción",
+      "recording": "Grabación",
+      "composition": "Composición"
+    }
+  },
+  "ep": {
+    "eyebrow": "EP de Tesis — 2026",
+    "title": "Entre dos orillas",
+    "collaborators": "Con Rebeca Sanabria (arpa paraguaya) y Amr Wahid (oud egipcio)",
+    "listen": "Escuchar"
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "production": {
+      "title": "Producción Musical",
+      "description": "Producción completa desde la composición hasta el máster final, arraigada en lenguajes sonoros paraguayos e interculturales."
+    },
+    "recording": {
+      "title": "Grabación e Ingeniería de Mezcla",
+      "description": "Grabación de sesiones en estudio y en vivo, mezcla y masterización para artistas y ensambles."
+    },
+    "soundDesign": {
+      "title": "Diseño de Sonido y Post-Producción",
+      "description": "Diseño de sonido y mezcla de re-grabación para documentales, cortometrajes y audiolibros, en estéreo y surround (5.1, 7.1.4)."
+    },
+    "composition": {
+      "title": "Composición",
+      "description": "Composición y arreglo original que conecta la guitarra clásica con la tradición paraguaya."
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "bio1": "Ana Maidana es una productora creativa, ingeniera de grabación y mezcla, diseñadora de sonido, guitarrista y compositora paraguaya, radicada en Abu Dhabi, EAU.",
+    "bio2": "Su trabajo conecta la guitarra clásica y la tradición paraguaya —polca, guarania— desde la mirada de la diáspora y la memoria. Su tesis se convirtió en \"Entre dos orillas\" (2026), un EP debut que sitúa marcadores sonoros paraguayos en diálogo con el oud egipcio y un ensamble multicultural.",
+    "bio3": "Fundó Nambi Retã, el primer podcast de arte y cultura de Paraguay — #1 en Apple Podcasts (2021), más de 40 mil reproducciones en 60+ episodios.",
+    "educationTitle": "Educación",
+    "education": "Licenciatura en Música y Negocios, Organizaciones y Sociedad — NYU Abu Dhabi (2022–2026)",
+    "toolsTitle": "Herramientas",
+    "tools": "Pro Tools, Logic Pro X, iZotope RX 11, Consola SSL, Avid S6, CapCut"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "cta": "Ponte en contacto",
+    "email": "Correo",
+    "booking": "Reservar una sesión",
+    "follow": "Seguir"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "project": {
+    "role": "Rol",
+    "screenings": "Proyecciones",
+    "credits": "Créditos",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "allWork": "Todo el trabajo"
+  },
+  "descriptions": {
+    "pina": "Cortometraje documental debut, estrenado en Matilha Cultural en São Paulo. Premiado como Mejor Documental Corto en los International Movie Awards.",
+    "sariSari": "Una película ambientada en un almacén filipino sari-sari, donde la supervivencia se cuenta un sobre a la vez.",
+    "vimtoMartini": "Un cortometraje cuyo título hace chocar un clásico de la infancia del Golfo con un cóctel occidental.",
+    "illegalAlien": "Un espacio docu-ficcional para la escucha profunda que traza el desplazamiento a través de la voz, el silencio y la textura.",
+    "estadoFallido": "Un documental de una comunidad indígena Pemón en Canaima, Venezuela, donde el turismo, la minería de oro y dos lecturas opuestas del país coexisten bajo el Salto Ángel.",
+    "super8": "Una comedia filmada en Super 8, donde un dueño de café de Abu Dhabi en apuros, un niño de lengua filosa y un plato imposible colisionan en una cocina que se niega a cooperar.",
+    "littlestGirlAtom": "Audiolibro de un libro de física infantil, grabado en Gazelien Records.",
+    "origen": "Sesión de grabación en estudio como ingeniera asistente.",
+    "amoresQueSeRompen": "Canción original — grabada, tocada y escrita por Ana.",
+    "arpaFairuzCover": "Un cover de Fairuz en arpa, grabado y con producción vocal de Ana.",
+    "coldplayCover": "Un cover de Coldplay grabado, mezclado y masterizado para la Orquesta Juvenil de Encarnación.",
+    "entreDosOrillas": "Un EP de tesis sobre la identidad paraguaya en la diáspora, que explora cómo la estética de la música tradicional paraguaya sigue siendo reconocible al dialogar con otras tradiciones musicales. Grabado en Abu Dhabi.",
+    "movimiento": "El viaje migratorio, contado a través de guitarra solista y ritmo.",
+    "abuDhabiTrack": "El arpa paraguaya se encuentra con la polca, creando un nuevo paisaje sonoro en el Golfo.",
+    "polkaArabia": "Una composición para guitarra solista que explora cómo la polca se transforma bajo la influencia del oud y la experiencia diaspórica.",
+    "desiertoDelSahara": "Duelo, desplazamiento y la soledad de vivir lejos de casa, expresados a través de un diálogo entre guitarra y oud."
+  }
+}

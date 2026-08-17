@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "work": "Work",
+    "ep": "Entre dos orillas",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Creative Producer — Recording & Mixing Engineer — Sound Designer — Guitarist",
+    "location": "Abu Dhabi, UAE — from Paraguay"
+  },
+  "artistStatement": {
+    "line1": "Exploring diaspora, cultural identity, and musical translation through sound.",
+    "line2": "Guitar strings and console faders, tuned to the same distance between two shores."
+  },
+  "work": {
+    "eyebrow": "Selected Work",
+    "viewProject": "View project",
+    "categories": {
+      "production": "Production",
+      "mixing": "Mixing",
+      "sound-design": "Sound Design",
+      "post-production": "Post-Production",
+      "recording": "Recording",
+      "composition": "Composition"
+    }
+  },
+  "ep": {
+    "eyebrow": "Thesis EP — 2026",
+    "title": "Entre dos orillas",
+    "collaborators": "With Rebeca Sanabria (Paraguayan harp) and Amr Wahid (Egyptian oud)",
+    "listen": "Listen"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "production": {
+      "title": "Music Production",
+      "description": "Full production from composition to final master, rooted in Paraguayan and cross-cultural sonic languages."
+    },
+    "recording": {
+      "title": "Recording & Mixing Engineering",
+      "description": "Studio and live session recording, mixing and mastering for artists and ensembles."
+    },
+    "soundDesign": {
+      "title": "Sound Design & Post-Production",
+      "description": "Sound design and re-recording mixing for documentary, short film, and audiobook, in stereo and surround (5.1, 7.1.4)."
+    },
+    "composition": {
+      "title": "Composition",
+      "description": "Original composition and arrangement bridging classical guitar with Paraguayan tradition."
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "bio1": "Ana Maidana is a Paraguayan creative producer, recording & mixing engineer, sound designer, guitarist, and composer based in Abu Dhabi, UAE.",
+    "bio2": "Her work bridges classical guitar and Paraguayan tradition — polca, guarania — through the lens of diaspora and memory. Her thesis became \"Entre dos orillas\" (2026), a debut EP placing Paraguayan sonic markers in dialogue with Egyptian oud and a multicultural ensemble.",
+    "bio3": "She founded Nambi Retã, Paraguay's first arts and culture podcast — #1 on Apple Podcasts (2021), 40k+ plays across 60+ episodes.",
+    "educationTitle": "Education",
+    "education": "BA in Music and Business, Organizations & Society — NYU Abu Dhabi (2022–2026)",
+    "toolsTitle": "Tools",
+    "tools": "Pro Tools, Logic Pro X, iZotope RX 11, SSL Console, Avid S6, CapCut"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "cta": "Get in touch",
+    "email": "Email",
+    "booking": "Book a session",
+    "follow": "Follow"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "project": {
+    "role": "Role",
+    "screenings": "Screenings",
+    "credits": "Credits",
+    "prev": "Previous",
+    "next": "Next",
+    "allWork": "All work"
+  },
+  "descriptions": {
+    "pina": "Debut documentary short, premiered at Matilha Cultural in São Paulo. Awarded Best Documentary Short at the International Movie Awards.",
+    "sariSari": "A film set inside a Filipino sari-sari store, where survival gets counted out one sachet at a time.",
+    "vimtoMartini": "A short film whose title collides a Gulf childhood staple with a Western cocktail.",
+    "illegalAlien": "A docu-fictional space for deep listening that traces displacement through voice, silence, and texture.",
+    "estadoFallido": "A documentary from an Indigenous Pemón community in Canaima, Venezuela, where tourism, gold mining, and two opposing readings of the country coexist beneath Angel Falls.",
+    "super8": "A comedy shot on Super 8, where a struggling Abu Dhabi cafe owner, a sharp-tongued boy, and one impossible dish collide inside a kitchen that refuses to cooperate.",
+    "littlestGirlAtom": "Audiobook from a children's physics book, recorded at Gazelien Records.",
+    "origen": "Studio recording session as assistant engineer.",
+    "amoresQueSeRompen": "Original song — recorded, played, and written by Ana.",
+    "arpaFairuzCover": "A harp cover of Fairuz, recorded and vocal-produced by Ana.",
+    "coldplayCover": "A Coldplay cover recorded, mixed, and mastered for Orquesta Juvenil de Encarnación.",
+    "entreDosOrillas": "A thesis EP on Paraguayan identity in diaspora — exploring how Paraguayan traditional music aesthetics remain recognizable when placed in dialogue with other musical traditions. Recorded in Abu Dhabi.",
+    "movimiento": "The migratory journey, told through solo guitar and rhythm.",
+    "abuDhabiTrack": "Paraguayan harp meets polca, creating a new sonic landscape in the Gulf.",
+    "polkaArabia": "A solo guitar composition exploring how polca transforms under the influence of oud playing and diasporic experience.",
+    "desiertoDelSahara": "Grief, displacement, and the solitude of living far from home, expressed through guitar and oud dialogue."
+  }
+}
