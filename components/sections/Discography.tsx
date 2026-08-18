@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { entreDosOrillas } from "@/data/release";
-import { AudioPlayer } from "@/components/audio/AudioPlayer";
+import { SpotifyEmbed } from "@/components/audio/SpotifyEmbed";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 export function Discography() {
@@ -30,7 +30,7 @@ export function Discography() {
         <ol className="mt-16 flex flex-col divide-y divide-off-white/10">
           {entreDosOrillas.tracks.map((track, i) => (
             <FadeIn key={track.slug} delay={i * 80} as="li" className="py-6">
-              <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
+              <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
                 <span className="font-mono text-xs text-silver-haze w-6 shrink-0">
                   {String(i + 1).padStart(2, "0")}
                 </span>
@@ -45,8 +45,8 @@ export function Discography() {
                     {t(`descriptions.${track.descriptionKey}`)}
                   </p>
                 </div>
-                <div className="w-full md:w-48 shrink-0">
-                  <AudioPlayer src={track.audioPreview} label={track.title} />
+                <div className="w-full md:w-72 shrink-0">
+                  <SpotifyEmbed spotifyId={track.spotifyId} label={track.title} />
                 </div>
               </div>
             </FadeIn>

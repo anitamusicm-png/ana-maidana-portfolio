@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 export function About() {
@@ -9,7 +9,16 @@ export function About() {
     <section id="about" className="px-6 md:px-10 py-24 md:py-32 bg-pale-dust scroll-mt-20">
       <div className="max-w-5xl mx-auto grid gap-12 md:grid-cols-2 items-start">
         <FadeIn as="section">
-          <ImagePlaceholder label="Ana — studio portrait" register="warm" className="aspect-[3/4]" />
+          <div className="relative aspect-[3/4] overflow-hidden">
+            <Image
+              src="/images/portraits/ana-studio.jpeg"
+              alt="Ana Maidana"
+              fill
+              className="object-cover object-top"
+              sizes="(min-width: 768px) 40vw, 90vw"
+              priority={false}
+            />
+          </div>
         </FadeIn>
 
         <FadeIn as="section" delay={100}>

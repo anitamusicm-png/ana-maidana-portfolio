@@ -2,6 +2,38 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "under-the-trucial-states",
+    title: "Under the Trucial States",
+    client: "Dir. Iain Akerman",
+    year: 2025,
+    categories: ["sound-design", "post-production"],
+    descriptionKey: "underTheTrucialStates",
+    heroLabel: "UNDER THE TRUCIAL STATES",
+    videoUrl: "https://youtu.be/SPmKO2M43gY",
+    credits: [
+      { role: "Director", name: "Iain Akerman" },
+      { role: "Sound Designer & Re-recording Mixer", name: "Ana Maidana" },
+    ],
+    featured: false,
+    order: 0,
+  },
+  {
+    slug: "line-of-sun",
+    title: "Line of Sun",
+    client: "Dir. Klaithem Al Jabri, Roudhah Al Mazrouei & Alawash",
+    year: 2025,
+    categories: ["sound-design", "post-production"],
+    descriptionKey: "lineOfSun",
+    heroLabel: "LINE OF SUN",
+    videoUrl: "https://youtu.be/KxQOZhrp1BA",
+    credits: [
+      { role: "Director", name: "Klaithem Al Jabri, Roudhah Al Mazrouei & Alawash" },
+      { role: "Sound Designer & Re-recording Mixer", name: "Ana Maidana" },
+    ],
+    featured: false,
+    order: 0.5,
+  },
+  {
     slug: "pina",
     title: "PINA",
     client: "Dir. Alexia Pereira",
@@ -25,6 +57,7 @@ export const projects: Project[] = [
     categories: ["mixing", "post-production"],
     descriptionKey: "sariSari",
     heroLabel: "SARI SARI — 2025",
+    videoUrl: "https://youtu.be/BTIfrCHc0Yo?si=7SehfgiG7syujhcZ",
     credits: [
       { role: "Director", name: "Jose Moreno" },
       { role: "Re-recording Mixer", name: "Ana Maidana" },
@@ -41,6 +74,7 @@ export const projects: Project[] = [
     categories: ["sound-design", "post-production"],
     descriptionKey: "vimtoMartini",
     heroLabel: "VIMTO MARTINI — TRAILER — 2024",
+    videoUrl: "https://vimeo.com/956249482?fl=pl&fe=vl",
     credits: [
       { role: "Director", name: "Al Reem Al Beshr" },
       { role: "Sound Designer & Re-recording Mixer", name: "Ana Maidana" },
@@ -57,6 +91,7 @@ export const projects: Project[] = [
     categories: ["sound-design", "post-production"],
     descriptionKey: "illegalAlien",
     heroLabel: "ILLEGAL ALIEN — TRAILER — 2023",
+    videoUrl: "https://youtu.be/KMMJ25e9fb8?si=7Y2U5c11S4HvE4Ih",
     credits: [
       { role: "Director", name: "Pamela Martínez" },
       { role: "Sound Designer & Re-recording Mixer", name: "Ana Maidana" },
@@ -73,6 +108,7 @@ export const projects: Project[] = [
     categories: ["mixing", "post-production"],
     descriptionKey: "estadoFallido",
     heroLabel: "ESTADO FALLIDO — TRAILER — 2023",
+    videoUrl: "https://youtu.be/UTx6NB30Zms?si=9J8t05A_3Grl6jFB",
     credits: [
       { role: "Director", name: "Pamela Martínez" },
       { role: "Re-recording Mixer", name: "Ana Maidana" },
@@ -82,14 +118,15 @@ export const projects: Project[] = [
   },
   {
     slug: "super-8",
-    title: "Super 8 Short Film",
-    client: "Dir. Mirchilin Mania",
+    title: "Mirchi-lin Mania",
+    client: "Dir. Anant Singh",
     year: 2022,
     categories: ["mixing", "post-production"],
     descriptionKey: "super8",
-    heroLabel: "SUPER 8 — 2022",
+    heroLabel: "MIRCHI-LIN MANIA — 2022",
+    videoUrl: "https://youtu.be/xMPM39gyIuQ",
     credits: [
-      { role: "Director", name: "Mirchilin Mania" },
+      { role: "Director", name: "Anant Singh" },
       { role: "Re-recording Mixer", name: "Ana Maidana" },
     ],
     featured: false,
@@ -136,7 +173,7 @@ export const projects: Project[] = [
       { role: "Guitarist", name: "Ana Maidana" },
       { role: "Songwriter", name: "Ana Maidana" },
     ],
-    featured: true,
+    featured: false,
     order: 9,
   },
   {
@@ -166,7 +203,7 @@ export const projects: Project[] = [
       { role: "Recording Engineer", name: "Ana Maidana" },
       { role: "Mixing & Mastering Engineer", name: "Ana Maidana" },
     ],
-    featured: true,
+    featured: false,
     order: 11,
   },
 ];
@@ -178,3 +215,18 @@ export const featuredProjects = projects
 export function getProjectBySlug(slug: string) {
   return projects.find((p) => p.slug === slug);
 }
+
+// Explicit reel order: the films Ana is actively showcasing with real video links first.
+const REEL_ORDER = [
+  "under-the-trucial-states",
+  "line-of-sun",
+  "illegal-alien",
+  "vimto-martini",
+  "sari-sari",
+  "estado-fallido",
+  "super-8",
+];
+
+export const reelFilms = REEL_ORDER.map((slug) => getProjectBySlug(slug)).filter(
+  (p): p is Project => Boolean(p?.videoUrl)
+);

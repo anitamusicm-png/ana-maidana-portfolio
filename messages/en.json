@@ -8,11 +8,11 @@
   },
   "hero": {
     "role": "Creative Producer — Recording & Mixing Engineer — Sound Designer — Guitarist",
-    "location": "Abu Dhabi, UAE — from Paraguay"
+    "location": "Encarnación, Asunción, Abu Dhabi, Dubai, New York, Shanghai, Valencia"
   },
   "artistStatement": {
     "line1": "Exploring diaspora, cultural identity, and musical translation through sound.",
-    "line2": "Guitar strings and console faders, tuned to the same distance between two shores."
+    "line2": "Where sound becomes language"
   },
   "work": {
     "eyebrow": "Selected Work",
@@ -25,6 +25,43 @@
       "recording": "Recording",
       "composition": "Composition"
     }
+  },
+  "music": {
+    "eyebrow": "Selected Music",
+    "title": "The Crate",
+    "subtitle": "A pull from the records — originals, covers, and session work across the discipline.",
+    "discoverMore": "Full catalog on",
+    "soundcloud": "SoundCloud",
+    "spotify": "Spotify",
+    "youtube": "YouTube"
+  },
+  "musicRoles": {
+    "vocalist": "Vocalist",
+    "recordingMixing": "Recording & Mixing Engineer",
+    "arrangerPerformer": "Arranger & Performer",
+    "guitarBassArrangement": "Guitar, Bass & Arrangement",
+    "composerProducer": "Composer & Producer",
+    "composerGuitarist": "Composer & Guitarist",
+    "composerSoundDesigner": "Composer & Sound Designer",
+    "recordingMixingMastering": "Recording, Mixing & Mastering Engineer",
+    "recordingGuitarSongwriting": "Recording Engineer, Guitarist & Songwriter",
+    "recordingVocalProduction": "Recording Engineer & Vocal Producer",
+    "mixingEngineer": "Mixing Engineer",
+    "recordingMixingEngineer": "Recording & Mixing Engineer"
+  },
+  "musicStyles": {
+    "reggaetonPop": "Reggaetón / Pop",
+    "pop": "Pop",
+    "paraguayanFolk": "Paraguayan Folk",
+    "popCover": "Pop Cover",
+    "khaleejiFusion": "Khaleeji Fusion",
+    "bolero": "Bolero",
+    "score": "Score / Underscore",
+    "orchestralCover": "Orchestral Cover",
+    "originalSong": "Original Song",
+    "arpaFolkCover": "Arpa / Folk Cover",
+    "latinJazz": "Latin Jazz",
+    "folklore": "Folklore"
   },
   "ep": {
     "eyebrow": "Thesis EP — 2026",
@@ -54,12 +91,12 @@
   "about": {
     "eyebrow": "About",
     "bio1": "Ana Maidana is a Paraguayan creative producer, recording & mixing engineer, sound designer, guitarist, and composer based in Abu Dhabi, UAE.",
-    "bio2": "Her work bridges classical guitar and Paraguayan tradition — polca, guarania — through the lens of diaspora and memory. Her thesis became \"Entre dos orillas\" (2026), a debut EP placing Paraguayan sonic markers in dialogue with Egyptian oud and a multicultural ensemble.",
+    "bio2": "Her work bridges classical guitar and Paraguayan tradition — polca and guarania — through the lens of diaspora and memory. Her thesis became \"Entre dos orillas\" (2026), a debut EP placing Paraguayan sonic markers in dialogue with Egyptian oud and a multicultural ensemble based in Abu Dhabi, UAE.",
     "bio3": "She founded Nambi Retã, Paraguay's first arts and culture podcast — #1 on Apple Podcasts (2021), 40k+ plays across 60+ episodes.",
     "educationTitle": "Education",
     "education": "BA in Music and Business, Organizations & Society — NYU Abu Dhabi (2022–2026)",
     "toolsTitle": "Tools",
-    "tools": "Pro Tools, Logic Pro X, iZotope RX 11, SSL Console, Avid S6, CapCut"
+    "tools": "Pro Tools, Logic Pro X, iZotope RX 11, SSL Console, Avid S6"
   },
   "contact": {
     "eyebrow": "Contact",
@@ -91,6 +128,8 @@
     "amoresQueSeRompen": "Original song — recorded, played, and written by Ana.",
     "arpaFairuzCover": "A harp cover of Fairuz, recorded and vocal-produced by Ana.",
     "coldplayCover": "A Coldplay cover recorded, mixed, and mastered for Orquesta Juvenil de Encarnación.",
+    "underTheTrucialStates": "Sound design and re-recording mix — details to be added.",
+    "lineOfSun": "Sound design and re-recording mix — details to be added.",
     "entreDosOrillas": "A thesis EP on Paraguayan identity in diaspora — exploring how Paraguayan traditional music aesthetics remain recognizable when placed in dialogue with other musical traditions. Recorded in Abu Dhabi.",
     "movimiento": "The migratory journey, told through solo guitar and rhythm.",
     "abuDhabiTrack": "Paraguayan harp meets polca, creating a new sonic landscape in the Gulf.",

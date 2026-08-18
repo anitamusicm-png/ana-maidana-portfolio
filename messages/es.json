@@ -8,11 +8,11 @@
   },
   "hero": {
     "role": "Productora Creativa — Ingeniera de Grabación y Mezcla — Diseñadora de Sonido — Guitarrista",
-    "location": "Abu Dhabi, EAU — de Paraguay"
+    "location": "Encarnación, Asunción, Abu Dhabi, Dubai, New York, Shanghai, Valencia"
   },
   "artistStatement": {
     "line1": "Explorando la diáspora, la identidad cultural y la traducción musical a través del sonido.",
-    "line2": "Cuerdas de guitarra y faders de consola, afinados a la misma distancia entre dos orillas."
+    "line2": "Donde el sonido se vuelve lenguaje"
   },
   "work": {
     "eyebrow": "Trabajo Seleccionado",
@@ -25,6 +25,43 @@
       "recording": "Grabación",
       "composition": "Composición"
     }
+  },
+  "music": {
+    "eyebrow": "Música Seleccionada",
+    "title": "El Crate",
+    "subtitle": "Una selección de discos — originales, covers y trabajo de sesión a través de la disciplina.",
+    "discoverMore": "Catálogo completo en",
+    "soundcloud": "SoundCloud",
+    "spotify": "Spotify",
+    "youtube": "YouTube"
+  },
+  "musicRoles": {
+    "vocalist": "Vocalista",
+    "recordingMixing": "Ingeniera de Grabación y Mezcla",
+    "arrangerPerformer": "Arreglista e Intérprete",
+    "guitarBassArrangement": "Guitarra, Bajo y Arreglo",
+    "composerProducer": "Compositora y Productora",
+    "composerGuitarist": "Compositora y Guitarrista",
+    "composerSoundDesigner": "Compositora y Diseñadora de Sonido",
+    "recordingMixingMastering": "Ingeniera de Grabación, Mezcla y Masterización",
+    "recordingGuitarSongwriting": "Ingeniera de Grabación, Guitarrista y Compositora",
+    "recordingVocalProduction": "Ingeniera de Grabación y Producción Vocal",
+    "mixingEngineer": "Ingeniera de Mezcla",
+    "recordingMixingEngineer": "Ingeniera de Grabación y Mezcla"
+  },
+  "musicStyles": {
+    "reggaetonPop": "Reggaetón / Pop",
+    "pop": "Pop",
+    "paraguayanFolk": "Folk Paraguayo",
+    "popCover": "Cover Pop",
+    "khaleejiFusion": "Fusión Khaleeji",
+    "bolero": "Bolero",
+    "score": "Score / Música Incidental",
+    "orchestralCover": "Cover Orquestal",
+    "originalSong": "Canción Original",
+    "arpaFolkCover": "Cover de Arpa / Folk",
+    "latinJazz": "Latin Jazz",
+    "folklore": "Folklore"
   },
   "ep": {
     "eyebrow": "EP de Tesis — 2026",
@@ -54,12 +91,12 @@
   "about": {
     "eyebrow": "Sobre mí",
     "bio1": "Ana Maidana es una productora creativa, ingeniera de grabación y mezcla, diseñadora de sonido, guitarrista y compositora paraguaya, radicada en Abu Dhabi, EAU.",
-    "bio2": "Su trabajo conecta la guitarra clásica y la tradición paraguaya —polca, guarania— desde la mirada de la diáspora y la memoria. Su tesis se convirtió en \"Entre dos orillas\" (2026), un EP debut que sitúa marcadores sonoros paraguayos en diálogo con el oud egipcio y un ensamble multicultural.",
+    "bio2": "Su trabajo conecta la guitarra clásica y la tradición paraguaya —polca y guarania— desde la mirada de la diáspora y la memoria. Su tesis se convirtió en \"Entre dos orillas\" (2026), un EP debut que sitúa marcadores sonoros paraguayos en diálogo con el oud egipcio y un ensamble multicultural con base en Abu Dhabi, EAU.",
     "bio3": "Fundó Nambi Retã, el primer podcast de arte y cultura de Paraguay — #1 en Apple Podcasts (2021), más de 40 mil reproducciones en 60+ episodios.",
     "educationTitle": "Educación",
     "education": "Licenciatura en Música y Negocios, Organizaciones y Sociedad — NYU Abu Dhabi (2022–2026)",
     "toolsTitle": "Herramientas",
-    "tools": "Pro Tools, Logic Pro X, iZotope RX 11, Consola SSL, Avid S6, CapCut"
+    "tools": "Pro Tools, Logic Pro X, iZotope RX 11, Consola SSL, Avid S6"
   },
   "contact": {
     "eyebrow": "Contacto",
@@ -91,6 +128,8 @@
     "amoresQueSeRompen": "Canción original — grabada, tocada y escrita por Ana.",
     "arpaFairuzCover": "Un cover de Fairuz en arpa, grabado y con producción vocal de Ana.",
     "coldplayCover": "Un cover de Coldplay grabado, mezclado y masterizado para la Orquesta Juvenil de Encarnación.",
+    "underTheTrucialStates": "Diseño de sonido y mezcla de re-grabación — detalles por agregar.",
+    "lineOfSun": "Diseño de sonido y mezcla de re-grabación — detalles por agregar.",
     "entreDosOrillas": "Un EP de tesis sobre la identidad paraguaya en la diáspora, que explora cómo la estética de la música tradicional paraguaya sigue siendo reconocible al dialogar con otras tradiciones musicales. Grabado en Abu Dhabi.",
     "movimiento": "El viaje migratorio, contado a través de guitarra solista y ritmo.",
     "abuDhabiTrack": "El arpa paraguaya se encuentra con la polca, creando un nuevo paisaje sonoro en el Golfo.",

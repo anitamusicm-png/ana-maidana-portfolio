@@ -21,6 +21,7 @@ export interface Project {
   heroLabel: string;
   audioPreview?: string;
   audioBeforeAfter?: { before: string; after: string };
+  videoUrl?: string;
   credits: Credit[];
   featured: boolean;
   order: number;
@@ -33,7 +34,22 @@ export interface Track {
   duration?: string;
   featuring?: string;
   audioPreview?: string;
+  spotifyId?: string;
   descriptionKey: string;
+}
+
+export type MusicSource =
+  | { type: "file"; url: string }
+  | { type: "spotify"; id: string }
+  | { type: "youtube"; id: string };
+
+export interface MusicTrack {
+  slug: string;
+  title: string;
+  artist: string;
+  roleKey: string;
+  styleKey: string;
+  source: MusicSource;
 }
 
 export interface Release {
