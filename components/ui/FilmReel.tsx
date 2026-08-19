@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import type { Project } from "@/types";
 import { parseVideoUrl } from "@/lib/video";
+import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 
 interface FilmReelProps {
   films: Project[];
@@ -115,7 +116,7 @@ export function FilmReel({ films }: FilmReelProps) {
                         className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
                       />
                     ) : (
-                      <div className="w-full h-full" />
+                      <ImagePlaceholder label={film.heroLabel} register="cool" className="w-full h-full" />
                     )}
                     <span className="absolute inset-0 flex items-center justify-center">
                       <span className="flex items-center justify-center w-14 h-14 rounded-full bg-off-white/90 opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300">

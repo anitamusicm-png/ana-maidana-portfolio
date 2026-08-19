@@ -5,7 +5,7 @@ export function ContactSection() {
   const t = useTranslations("contact");
 
   return (
-    <section id="contact" className="px-6 md:px-10 py-24 md:py-32 bg-off-white scroll-mt-20">
+    <section id="contact" className="px-6 md:px-10 py-24 md:py-32 bg-off-white scroll-mt-28">
       <FadeIn as="section" className="max-w-2xl">
         <p className="font-mono text-xs uppercase tracking-wider text-cobalt mb-3">
           {t("eyebrow")}

@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { WaveformBackground } from "@/components/animations/WaveformBackground";
+import { Link } from "@/i18n/navigation";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -22,6 +23,15 @@ export function Hero() {
         <p className="mt-6 max-w-xl text-sm md:text-base font-mono uppercase tracking-wide text-charcoal/80">
           {t("role")}
         </p>
+        <p className="mt-3 max-w-xl text-xs md:text-sm font-mono tracking-wide text-charcoal/50">
+          {t("credentials")}
+        </p>
+        <Link
+          href="/contact"
+          className="mt-6 inline-block font-mono text-xs uppercase tracking-wider border border-charcoal px-5 py-2.5 hover:bg-charcoal hover:text-off-white transition-colors"
+        >
+          {t("cta")} →
+        </Link>
       </div>
 
       <div className="font-mono text-xs uppercase tracking-wider opacity-60">
