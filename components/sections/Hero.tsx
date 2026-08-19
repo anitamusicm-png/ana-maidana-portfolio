@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { WaveformBackground } from "@/components/animations/WaveformBackground";
-import { Link } from "@/i18n/navigation";
+import { BOOKING_URL } from "@/lib/constants";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -11,7 +11,6 @@ export function Hero() {
 
       <div className="flex justify-between items-start font-mono text-xs uppercase tracking-wider">
         <span>{t("location")}</span>
-        <span className="w-2 h-2 rounded-full bg-cobalt" aria-hidden="true" />
       </div>
 
       <div className="relative">
@@ -26,12 +25,14 @@ export function Hero() {
         <p className="mt-3 max-w-xl text-xs md:text-sm font-mono tracking-wide text-charcoal/50">
           {t("credentials")}
         </p>
-        <Link
-          href="/contact"
+        <a
+          href={BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-6 inline-block font-mono text-xs uppercase tracking-wider border border-charcoal px-5 py-2.5 hover:bg-charcoal hover:text-off-white transition-colors"
         >
           {t("cta")} →
-        </Link>
+        </a>
 
         <div className="mt-4 max-w-md flex flex-col sm:flex-row gap-2 sm:gap-3">
           {[

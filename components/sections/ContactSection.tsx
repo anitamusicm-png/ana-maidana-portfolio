@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/animations/FadeIn";
+import { BOOKING_URL } from "@/lib/constants";
 
 export function ContactSection() {
   const t = useTranslations("contact");
@@ -20,7 +21,7 @@ export function ContactSection() {
             anitamusicm@gmail.com
           </a>
           <a
-            href="https://calendar.app.google/qVfVty7bfK5PcsoM7"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-sm md:text-base underline underline-offset-4 hover:text-cobalt transition-colors w-fit"

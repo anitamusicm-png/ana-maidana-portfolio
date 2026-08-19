@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { SketchfabEmbed } from "@/components/ui/SketchfabEmbed";
+import { BOOKING_URL } from "@/lib/constants";
 
 const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/anitamusicm/" },
@@ -33,7 +34,7 @@ export function Footer() {
             anitamusicm@gmail.com
           </a>
           <a
-            href="https://calendar.app.google/qVfVty7bfK5PcsoM7"
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="block text-sm hover:text-cobalt transition-colors"

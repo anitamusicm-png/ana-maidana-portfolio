@@ -29,6 +29,7 @@ export function Navigation() {
     { href: "/#services", label: t("services") },
     { href: "/about", label: t("about") },
   ];
+  const contactHref = "/#contact";
 
   return (
     <>
@@ -57,12 +58,12 @@ export function Navigation() {
           </ul>
 
           <div className="hidden md:flex items-center gap-6">
-            <Link
-              href="/contact"
+            <a
+              href={contactHref}
               className="font-mono text-xs uppercase tracking-wider border border-charcoal px-4 py-2 hover:bg-charcoal hover:text-off-white transition-colors"
             >
               {t("contact")}
-            </Link>
+            </a>
             <LanguageSwitcher />
           </div>
 
@@ -87,9 +88,9 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <Link href="/contact" onClick={() => setMenuOpen(false)}>
+            <a href={contactHref} onClick={() => setMenuOpen(false)}>
               {t("contact")}
-            </Link>
+            </a>
           </div>
         )}
       </header>

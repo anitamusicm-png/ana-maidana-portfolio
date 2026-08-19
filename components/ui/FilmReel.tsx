@@ -77,6 +77,7 @@ export function FilmReel({ films }: FilmReelProps) {
 
         <div
           ref={stageRef}
+          data-lenis-prevent
           className="film-reel-stage relative w-full h-[320px] sm:h-[420px] md:h-[520px] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-deep-navy shadow-[0_24px_48px_-20px_rgba(27,42,59,0.55)]"
         >
           {films.map((film, i) => {
@@ -119,7 +120,7 @@ export function FilmReel({ films }: FilmReelProps) {
                       <ImagePlaceholder label={film.heroLabel} register="cool" className="w-full h-full" />
                     )}
                     <span className="absolute inset-0 flex items-center justify-center">
-                      <span className="flex items-center justify-center w-14 h-14 rounded-full bg-off-white/90 opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300">
+                      <span className="flex items-center justify-center w-14 h-14 rounded-full bg-off-white/90 opacity-70 sm:opacity-0 sm:group-hover:opacity-100 scale-100 sm:scale-90 sm:group-hover:scale-100 transition-all duration-300">
                         <svg width="14" height="14" viewBox="0 0 10 10" fill="currentColor" aria-hidden="true">
                           <path d="M0 0 L10 5 L0 10 Z" />
                         </svg>
