@@ -187,8 +187,8 @@ export function FilmReel({ films }: FilmReelProps) {
         })}
       </nav>
 
-      {/* mobile-only caption: makes scroll + tap affordances explicit on touch devices */}
-      <p className="md:hidden col-span-full -mt-2 font-mono text-[10px] uppercase tracking-wider text-charcoal/45 text-center">
+      {/* caption: makes scroll + tap affordances explicit on every device */}
+      <p className="col-span-full -mt-2 font-mono text-[10px] uppercase tracking-wider text-charcoal/45 text-center">
         {t("mobileHint")}
       </p>
 
