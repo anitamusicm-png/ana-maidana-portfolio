@@ -29,8 +29,8 @@
   "music": {
     "eyebrow": "Música Seleccionada",
     "title": "El Crate",
-    "subtitle": "Una selección de discos — originales, covers y trabajo de sesión a través de la disciplina.",
-    "discoverMore": "Catálogo completo en",
+    "subtitle": "Discos donde toqué, grabé o mezclé — originales, covers y trabajo de sesión.",
+    "discoverMore": "Escuchá el catálogo completo:",
     "soundcloud": "SoundCloud",
     "spotify": "Spotify",
     "youtube": "YouTube"
@@ -43,7 +43,7 @@
     "composerProducer": "Compositora y Productora",
     "composerGuitarist": "Compositora y Guitarrista",
     "composerSoundDesigner": "Compositora y Diseñadora de Sonido",
-    "recordingMixingMastering": "Ingeniera de Grabación, Mezcla y Masterización",
+    "recordingMixingMastering": "Grabación, mezcla y masterización",
     "recordingGuitarSongwriting": "Ingeniera de Grabación, Guitarrista y Compositora",
     "recordingVocalProduction": "Ingeniera de Grabación y Producción Vocal",
     "mixingEngineer": "Ingeniera de Mezcla",
@@ -60,7 +60,7 @@
     "orchestralCover": "Cover Orquestal",
     "originalSong": "Canción Original",
     "arpaFolkCover": "Cover de Arpa / Folk",
-    "latinJazz": "Latin Jazz",
+    "latinJazz": "Jazz Latino",
     "folklore": "Folklore"
   },
   "ep": {
