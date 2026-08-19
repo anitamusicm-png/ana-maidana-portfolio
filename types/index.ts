@@ -50,6 +50,8 @@ export interface MusicTrack {
   roleKey: string;
   styleKey: string;
   source: MusicSource;
+  beforeAfter?: { before: string; after: string };
+  quoteKey?: string;
 }
 
 export interface Release {

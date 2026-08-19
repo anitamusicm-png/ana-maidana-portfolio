@@ -2,6 +2,7 @@
 
 import type { MusicTrack } from "@/types";
 import { useTranslations } from "next-intl";
+import { BeforeAfterToggle, type BeforeAfterValue } from "./BeforeAfterToggle";
 
 function formatTime(seconds: number) {
   if (!Number.isFinite(seconds)) return "0:00";
@@ -21,6 +22,8 @@ interface RecordPlayerProps {
   onNext: () => void;
   onVolumeChange: (v: number) => void;
   onSeek: (t: number) => void;
+  abValue?: BeforeAfterValue;
+  onAbChange?: (value: BeforeAfterValue) => void;
 }
 
 export function RecordPlayer({
@@ -34,6 +37,8 @@ export function RecordPlayer({
   onNext,
   onVolumeChange,
   onSeek,
+  abValue,
+  onAbChange,
 }: RecordPlayerProps) {
   const t = useTranslations();
 
@@ -121,6 +126,10 @@ export function RecordPlayer({
         <p className="font-mono text-[10px] uppercase tracking-wider text-charcoal/45 mt-0.5 truncate">
           {t(`musicStyles.${track.styleKey}`)}
         </p>
+
+        {abValue && onAbChange && (
+          <BeforeAfterToggle value={abValue} onChange={onAbChange} className="mt-3" />
+        )}
       </div>
 
       <div className="mt-6 flex items-center gap-4">

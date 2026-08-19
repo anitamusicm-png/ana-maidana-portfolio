@@ -10,7 +10,10 @@
     "role": "Creative Producer — Recording & Mixing Engineer — Sound Designer — Guitarist",
     "location": "Encarnación, Asunción, Abu Dhabi, Dubai, New York, Shanghai, Valencia",
     "credentials": "NYU Abu Dhabi — #1 cultural podcast in Paraguay — work across 7+ countries",
-    "cta": "Book a session"
+    "cta": "Book a session",
+    "quickMusic": "Listen to my music",
+    "quickServices": "Audio services",
+    "quickWork": "Audiovisual work"
   },
   "artistStatement": {
     "line1": "Exploring diaspora, cultural identity, and musical translation through sound.",
@@ -35,7 +38,14 @@
     "discoverMore": "Full catalog on",
     "soundcloud": "SoundCloud",
     "spotify": "Spotify",
-    "youtube": "YouTube"
+    "youtube": "YouTube",
+    "before": "Before",
+    "after": "After"
+  },
+  "musicQuotes": {
+    "origen": "The tone he got out of the trumpet is something nobody else had gotten for me. — Romario",
+    "aSkyFullOfStars": "She makes the orchestra sound big, clear, and balanced. — Director, Orquesta Juvenil de la ciudad de Encarnación",
+    "amoresQueSeRompen": "She doesn't just press record — she gives artistic direction and genuinely gets involved in the record. — Liz Martinez"
   },
   "musicRoles": {
     "vocalist": "Vocalist",

@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { musicTracks } from "@/data/musicTracks";
 import { RecordPlayer } from "@/components/ui/RecordPlayer";
 import { FadeIn } from "@/components/animations/FadeIn";
+import type { BeforeAfterValue } from "@/components/ui/BeforeAfterToggle";
 
 const CATALOG_LINKS = [
   { key: "youtube", href: "https://youtu.be/Rsj3gX6vjZ8?si=Dg5b20Q5BAk4ZDvH" },
@@ -19,15 +20,22 @@ export function MusicShowcase() {
   const t = useTranslations("music");
   const tCommon = useTranslations();
   const audioRef = useRef<HTMLAudioElement>(null);
+  const pendingRestoreRef = useRef<{ time: number; playing: boolean } | null>(null);
 
   const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(0.8);
+  const [abState, setAbState] = useState<Record<string, BeforeAfterValue>>({});
 
   const track = musicTracks[index];
-  const trackUrl = track.source.type === "file" ? track.source.url : undefined;
+  const abValue: BeforeAfterValue = abState[track.slug] ?? "after";
+  const trackUrl = track.beforeAfter
+    ? track.beforeAfter[abValue]
+    : track.source.type === "file"
+      ? track.source.url
+      : undefined;
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -70,8 +78,29 @@ export function MusicShowcase() {
     setCurrentTime(t);
   }
 
+  function changeAb(value: BeforeAfterValue) {
+    const audio = audioRef.current;
+    if (audio) {
+      pendingRestoreRef.current = { time: audio.currentTime, playing };
+    }
+    setAbState((prev) => ({ ...prev, [track.slug]: value }));
+  }
+
+  function onLoadedMetadata(e: React.SyntheticEvent<HTMLAudioElement>) {
+    const audio = e.currentTarget;
+    setDuration(audio.duration);
+
+    const pending = pendingRestoreRef.current;
+    if (pending) {
+      pendingRestoreRef.current = null;
+      audio.currentTime = pending.time;
+      setCurrentTime(pending.time);
+      if (pending.playing) audio.play().catch(() => setPlaying(false));
+    }
+  }
+
   return (
-    <section className="px-6 md:px-10 py-24 md:py-32 bg-pale-dust">
+    <section id="el-crate" className="px-6 md:px-10 py-24 md:py-32 bg-pale-dust scroll-mt-28">
       <FadeIn as="section" className="max-w-2xl">
         <p className="font-mono text-xs uppercase tracking-wider text-burnt-amber mb-3">
           {t("eyebrow")}
@@ -93,6 +122,8 @@ export function MusicShowcase() {
             onNext={next}
             onVolumeChange={setVolume}
             onSeek={seek}
+            abValue={track.beforeAfter ? abValue : undefined}
+            onAbChange={track.beforeAfter ? changeAb : undefined}
           />
 
           <ol className="w-full max-w-xl flex flex-col divide-y divide-charcoal/10">
@@ -125,6 +156,11 @@ export function MusicShowcase() {
                       {tCommon(`musicStyles.${item.styleKey}`)}
                     </span>
                   </button>
+                  {item.quoteKey && (
+                    <p className="pb-4 -mt-2 pl-10 pr-4 text-xs italic text-charcoal/60 leading-relaxed">
+                      “{tCommon(`musicQuotes.${item.quoteKey}`)}”
+                    </p>
+                  )}
                 </li>
               );
             })}
@@ -137,7 +173,7 @@ export function MusicShowcase() {
           ref={audioRef}
           src={trackUrl}
           onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime)}
-          onLoadedMetadata={(e) => setDuration(e.currentTarget.duration)}
+          onLoadedMetadata={onLoadedMetadata}
           onEnded={next}
           className="hidden"
         />
