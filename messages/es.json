@@ -114,7 +114,9 @@
     "credits": "Créditos",
     "prev": "Anterior",
     "next": "Siguiente",
-    "allWork": "Todo el trabajo"
+    "allWork": "Todo el trabajo",
+    "scrollHint": "Desliza para ver más",
+    "mobileHint": "Desliza para ver más films · Tocá un título para más detalles"
   },
   "descriptions": {
     "pina": "Cortometraje documental debut, estrenado en Matilha Cultural en São Paulo. Premiado como Mejor Documental Corto en los International Movie Awards.",

@@ -21,6 +21,7 @@ export function FilmReel({ films }: FilmReelProps) {
   const t = useTranslations("project");
   const stageRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
+  const [progress, setProgress] = useState(0); // continuous scroll position, in slide units
   const [expanded, setExpanded] = useState<number | null>(null);
   const [loaded, setLoaded] = useState<Set<number>>(new Set([0]));
 
@@ -33,7 +34,9 @@ export function FilmReel({ films }: FilmReelProps) {
       cancelAnimationFrame(raf);
       raf = requestAnimationFrame(() => {
         if (!stage) return;
-        const index = Math.round(stage.scrollTop / stage.clientHeight);
+        const rawProgress = stage.scrollTop / stage.clientHeight;
+        setProgress(rawProgress);
+        const index = Math.round(rawProgress);
         setActive(index);
         setLoaded((prev) => (prev.has(index) ? prev : new Set(prev).add(index)));
       });
@@ -58,19 +61,35 @@ export function FilmReel({ films }: FilmReelProps) {
     <div className="grid md:grid-cols-[1fr_auto] gap-6 md:gap-12 items-start">
       <div className="relative">
         {/* stacked-card effect: faint duplicates peeking out behind the stage */}
-        <div className="absolute inset-x-3 -bottom-2 top-2 bg-charcoal/8 -z-10" aria-hidden="true" />
-        <div className="absolute inset-x-1.5 -bottom-1 top-1 bg-charcoal/12 -z-10" aria-hidden="true" />
+        <div
+          className="absolute inset-x-6 -bottom-4 top-4 bg-mid-blue/15 -rotate-1 -z-20 shadow-lg"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-x-4 -bottom-3 top-3 bg-burnt-amber/15 rotate-1 -z-10 shadow-lg"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute inset-x-2 -bottom-1.5 top-1.5 bg-charcoal/15 -z-10 shadow-lg"
+          aria-hidden="true"
+        />
 
         <div
           ref={stageRef}
-          className="film-reel-stage relative w-full h-[320px] sm:h-[420px] md:h-[520px] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-deep-navy"
+          className="film-reel-stage relative w-full h-[320px] sm:h-[420px] md:h-[520px] overflow-y-auto snap-y snap-mandatory scroll-smooth bg-deep-navy shadow-[0_24px_48px_-20px_rgba(27,42,59,0.55)]"
         >
           {films.map((film, i) => {
             const video = film.videoUrl ? parseVideoUrl(film.videoUrl) : null;
             const shouldLoad = loaded.has(i);
+            const distance = Math.min(Math.abs(progress - i), 1);
+            const opacity = 1 - distance * 0.85;
 
             return (
-              <div key={film.slug} className="snap-start snap-always w-full h-full shrink-0">
+              <div
+                key={film.slug}
+                className="film-slide snap-start snap-always w-full h-full shrink-0"
+                style={{ opacity }}
+              >
                 {shouldLoad && video ? (
                   <iframe
                     title={film.title}
@@ -110,6 +129,20 @@ export function FilmReel({ films }: FilmReelProps) {
               </div>
             );
           })}
+        </div>
+
+        {/* scroll hint — fades out once the visitor reaches the last film */}
+        <div
+          className="scroll-hint pointer-events-none absolute bottom-3 inset-x-0 flex justify-center transition-opacity duration-500"
+          style={{ opacity: active >= films.length - 1 ? 0 : 1 }}
+          aria-hidden="true"
+        >
+          <span className="flex flex-col items-center gap-1 font-mono text-[10px] uppercase tracking-wider text-off-white/80">
+            <span>{t("scrollHint")}</span>
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" className="scroll-hint-arrow">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          </span>
         </div>
       </div>
 
@@ -154,6 +187,11 @@ export function FilmReel({ films }: FilmReelProps) {
         })}
       </nav>
 
+      {/* mobile-only caption: makes scroll + tap affordances explicit on touch devices */}
+      <p className="md:hidden col-span-full -mt-2 font-mono text-[10px] uppercase tracking-wider text-charcoal/45 text-center">
+        {t("mobileHint")}
+      </p>
+
       <style jsx>{`
         .film-reel-stage {
           scrollbar-width: none;
@@ -161,6 +199,21 @@ export function FilmReel({ films }: FilmReelProps) {
         }
         .film-reel-stage::-webkit-scrollbar {
           display: none;
+        }
+        .film-slide {
+          transition: opacity 120ms linear;
+        }
+        .scroll-hint-arrow {
+          animation: scroll-hint-bounce 1.6s ease-in-out infinite;
+        }
+        @keyframes scroll-hint-bounce {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(3px);
+          }
         }
       `}</style>
     </div>
