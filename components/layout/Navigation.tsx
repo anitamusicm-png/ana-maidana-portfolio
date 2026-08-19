@@ -66,15 +66,18 @@ export function Navigation() {
             <LanguageSwitcher />
           </div>
 
-          <button
-            type="button"
-            className="md:hidden font-mono text-xs uppercase tracking-wider"
-            aria-label="Toggle menu"
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((v) => !v)}
-          >
-            {menuOpen ? "Close" : "Menu"}
-          </button>
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageSwitcher />
+            <button
+              type="button"
+              className="font-mono text-xs uppercase tracking-wider"
+              aria-label="Toggle menu"
+              aria-expanded={menuOpen}
+              onClick={() => setMenuOpen((v) => !v)}
+            >
+              {menuOpen ? "Close" : "Menu"}
+            </button>
+          </div>
         </nav>
 
         {menuOpen && (
@@ -87,7 +90,6 @@ export function Navigation() {
             <Link href="/contact" onClick={() => setMenuOpen(false)}>
               {t("contact")}
             </Link>
-            <LanguageSwitcher />
           </div>
         )}
       </header>
