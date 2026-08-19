@@ -148,7 +148,7 @@ export function FilmReel({ films }: FilmReelProps) {
 
       <nav
         aria-label="Films"
-        className="flex md:flex-col gap-x-5 gap-y-2 overflow-x-auto md:overflow-visible pb-2 md:pb-0 md:w-48"
+        className="flex flex-wrap md:flex-nowrap md:flex-col gap-x-5 gap-y-2 md:overflow-visible pb-2 md:pb-0 md:w-48"
       >
         {films.map((film, i) => {
           const role = anaRole(film);
